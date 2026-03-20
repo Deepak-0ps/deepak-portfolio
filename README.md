@@ -114,7 +114,7 @@
 <td width="14">&nbsp;</td>
 <td>[![5](assets/exp_card_5.svg)](#)</td>
 <td width="14">&nbsp;</td>
-<td>[![6](assets/exp_card_6.svg)](#)</td>
+<td>[![6](assets/exp_card_6.svg)]</td>
 </tr>
 <tr><td colspan="5" height="14"></td></tr>
 <tr>
