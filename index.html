@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deepak Baviskar — Full-Stack Ninja</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --bg: #f4efe6;
+      --card: #ffffff;
+      --ink: #1a1a1a;
+      --yellow: #FFD93D;
+      --blue-pill: #6C8EFF;
+      --green-pill: #6BCB77;
+      --cyan: #6FDFFF;
+      --pink: #FF85A1;
+      --shadow: 4px 4px 0 #1a1a1a;
+      --shadow-lg: 6px 6px 0 #1a1a1a;
+      --border: 2.5px solid #1a1a1a;
+      --radius: 10px;
+      --font: 'DM Sans', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--ink);
+      min-height: 100vh;
+    }
+
+    /* ─── LAYOUT WRAPPER ─── */
+    .wrapper {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 20px 20px 40px;
+    }
+
+    /* ─── NAVBAR ─── */
+    nav {
+      background: var(--card);
+      border: var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 18px;
+      margin-bottom: 40px;
+      position: sticky;
+      top: 16px;
+      z-index: 100;
+    }
+    .nav-logo {
+      background: var(--ink);
+      color: #fff;
+      font-weight: 800;
+      font-size: 13px;
+      padding: 5px 9px;
+      border-radius: 6px;
+      letter-spacing: 1.5px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 26px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 500;
+      transition: opacity .15s;
+    }
+    .nav-links a:hover { opacity: .55; }
+    .nav-links a.active { font-weight: 800; text-decoration: underline; text-underline-offset: 3px; }
+    .nav-right { display: flex; gap: 10px; align-items: center; }
+    .btn-nav {
+      background: var(--yellow);
+      border: var(--border);
+      border-radius: 8px;
+      font-family: var(--font);
+      font-weight: 700;
+      font-size: 13px;
+      padding: 7px 16px;
+      box-shadow: 3px 3px 0 var(--ink);
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--ink);
+      transition: transform .1s, box-shadow .1s;
+    }
+    .btn-nav:hover { transform: translate(-1px,-1px); box-shadow: 5px 5px 0 var(--ink); }
+    .btn-nav:active { transform: translate(2px,2px); box-shadow: 2px 2px 0 var(--ink); }
+    .icon-btn {
+      border: var(--border);
+      width: 34px; height: 34px;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px;
+      background: var(--card);
+      cursor: pointer;
+      box-shadow: 2px 2px 0 var(--ink);
+      transition: transform .1s;
+    }
+    .icon-btn:hover { transform: translate(-1px,-1px); }
+
+    /* ─── HERO ─── */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      margin-bottom: 36px;
+      animation: fadeUp .55s ease both;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .hero-greeting { font-size: 22px; margin-bottom: 6px; }
+    .hero-name {
+      font-size: 42px;
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 14px;
+    }
+    .hero-desc {
+      font-size: 13.5px;
+      line-height: 1.7;
+      color: #444;
+      margin-bottom: 20px;
+      max-width: 350px;
+    }
+    .hero-socials { display: flex; gap: 10px; margin-bottom: 20px; }
+    .s-btn {
+      border: var(--border);
+      width: 36px; height: 36px;
+      border-radius: 9px;
+      background: var(--card);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+      box-shadow: var(--shadow);
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--ink);
+      transition: transform .1s, box-shadow .1s;
+    }
+    .s-btn:hover { transform: translate(-1px,-2px); box-shadow: 5px 6px 0 var(--ink); }
+    .hero-actions { display: flex; align-items: center; gap: 20px; }
+    .btn-main {
+      background: var(--yellow);
+      border: var(--border);
+      border-radius: 9px;
+      font-family: var(--font);
+      font-weight: 700;
+      font-size: 14px;
+      padding: 10px 22px;
+      box-shadow: var(--shadow);
+      text-decoration: none;
+      color: var(--ink);
+      display: inline-block;
+      transition: transform .1s, box-shadow .1s;
+    }
+    .btn-main:hover { transform: translate(-1px,-2px); box-shadow: 6px 6px 0 var(--ink); }
+    .btn-main:active { transform: translate(2px,2px); box-shadow: 2px 2px 0 var(--ink); }
+    .coffee-link {
+      font-family: 'Caveat', cursive;
+      font-size: 19px;
+      color: var(--ink);
+      text-decoration: none;
+      display: flex; align-items: center; gap: 6px;
+      transition: opacity .15s;
+    }
+    .coffee-link:hover { opacity: .7; }
+
+    /* ─── AVATAR CARD ─── */
+    .hero-right {
+      display: flex;
+      justify-content: center;
+      padding: 30px 30px 30px 10px;
+      animation: fadeUp .55s .12s ease both;
+    }
+    .av-wrap { position: relative; }
+    .av-card {
+      border: 3px solid var(--ink);
+      border-radius: 14px;
+      background: var(--card);
+      padding: 8px;
+      width: 210px;
+      box-shadow: var(--shadow-lg);
+    }
+    .av-face {
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(145deg, #ffd93d 0%, #ffb347 60%, #ff8c42 100%);
+      border-radius: 9px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 72px;
+      overflow: hidden;
+    }
+    .ninja-badge {
+      position: absolute;
+      bottom: -14px; right: -10px;
+      background: var(--ink);
+      color: #fff;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 20px;
+      white-space: nowrap;
+      letter-spacing: .5px;
+    }
+    .stk {
+      position: absolute;
+      border: 2.5px solid var(--ink);
+      border-radius: 9px;
+      width: 44px; height: 44px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px; font-weight: 700;
+      box-shadow: 3px 3px 0 var(--ink);
+    }
+    .stk-code { top: -16px; left: -16px; background: var(--card); font-size: 13px; }
+    .stk-disk { bottom: 14px; left: -22px; background: #6C8EFF; color: #fff; }
+    .stk-term { top: 14px; right: -22px; background: var(--ink); color: var(--yellow); font-size: 12px; }
+
+    /* ─── TECH PILLS ─── */
+    .pills {
+      display: flex; flex-wrap: wrap; gap: 8px;
+      padding-top: 20px;
+      border-top: 2px dashed #ccc;
+      margin-bottom: 6px;
+      animation: fadeUp .55s .2s ease both;
+    }
+    .pill {
+      border: 2px solid var(--ink);
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: 12px; font-weight: 600;
+      background: var(--card);
+      box-shadow: 2px 2px 0 var(--ink);
+      display: flex; align-items: center; gap: 5px;
+      cursor: default;
+      transition: transform .1s, box-shadow .1s;
+    }
+    .pill:hover { transform: translate(-1px,-1px); box-shadow: 3px 3px 0 var(--ink); }
+    .pill.y { background: var(--yellow); }
+    .pill.d { background: var(--ink); color: #fff; }
+
+    /* ─── WAVY DIVIDER ─── */
+    .wavy {
+      text-align: center;
+      margin: 18px 0 24px;
+      overflow: hidden;
+      line-height: 1;
+    }
+    .wavy svg { width: 100%; height: 22px; }
+
+    /* ─── SECTION LABEL ─── */
+    .sec-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--yellow);
+      border: var(--border);
+      border-radius: 8px;
+      font-weight: 800;
+      font-size: 13px;
+      padding: 6px 16px;
+      box-shadow: var(--shadow);
+      letter-spacing: 1.5px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+    }
+
+    /* ─── ABOUT ─── */
+    .about-card {
+      background: var(--card);
+      border: var(--border);
+      border-radius: 12px;
+      padding: 26px 30px;
+      box-shadow: var(--shadow-lg);
+      margin-bottom: 28px;
+      font-size: 13.5px;
+      line-height: 1.85;
+      color: #333;
+    }
+    .about-card p { margin-bottom: 14px; }
+    .about-card p:last-child { margin-bottom: 0; }
+    .hy { background: var(--yellow); padding: 1px 5px; border-radius: 3px; font-weight: 700; }
+    .hb { background: var(--blue-pill); color: #fff; padding: 1px 6px; border-radius: 3px; font-weight: 600; font-size: 12.5px; }
+    .hg { background: var(--green-pill); padding: 1px 5px; border-radius: 3px; font-weight: 700; }
+
+    /* ─── TWO COLUMN ─── */
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 28px; }
+
+    /* ─── EDU CARD ─── */
+    .edu-card {
+      background: var(--card);
+      border: var(--border);
+      border-radius: 12px;
+      padding: 22px;
+      box-shadow: var(--shadow);
+    }
+    .edu-card h3 { font-size: 17px; font-weight: 800; line-height: 1.3; margin-bottom: 5px; }
+    .edu-sub { font-size: 12px; color: #777; margin-bottom: 12px; }
+    .edu-badges { display: flex; gap: 8px; margin-bottom: 10px; }
+    .edu-badge {
+      border: 2px solid var(--ink);
+      border-radius: 5px;
+      padding: 3px 10px;
+      font-size: 11px; font-weight: 800;
+      background: var(--yellow);
+    }
+    .edu-place { font-size: 11.5px; color: #aaa; }
+
+    /* ─── LANG CARD ─── */
+    .lang-card {
+      background: var(--card);
+      border: var(--border);
+      border-radius: 12px;
+      padding: 22px;
+      box-shadow: var(--shadow);
+    }
+    .lang-row {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 9px 0;
+      border-bottom: 1.5px dashed #e0e0e0;
+      font-size: 13px; font-weight: 500;
+    }
+    .lang-row:last-child { border-bottom: none; }
+    .dots { display: flex; gap: 5px; }
+    .dot {
+      width: 13px; height: 13px;
+      border-radius: 50%;
+      border: 2px solid var(--ink);
+    }
+    .dot.on { background: var(--ink); }
+
+    /* ─── SKILLS ─── */
+    .skills-card {
+      background: var(--card);
+      border: var(--border);
+      border-radius: 12px;
+      padding: 22px;
+      box-shadow: var(--shadow-lg);
+      margin-bottom: 28px;
+    }
+    .sk-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; margin-top: 16px; }
+    .sk-col {
+      border: 2px solid var(--ink);
+      border-radius: 10px;
+      padding: 14px 14px 10px;
+      background: #f9f5ed;
+    }
+    .sk-col.fe { border-color: #FF6B35; }
+    .sk-col.la { border-color: #6C8EFF; }
+    .sk-col.be { border-color: #E91E8C; }
+    .sk-head {
+      display: flex; align-items: center; gap: 7px;
+      font-weight: 800; font-size: 11px;
+      margin-bottom: 12px; padding-bottom: 9px;
+      border-bottom: 2px solid currentColor;
+      text-transform: uppercase; letter-spacing: .8px;
+    }
+    .sk-col.fe .sk-head { color: #FF6B35; }
+    .sk-col.la .sk-head { color: #6C8EFF; }
+    .sk-col.be .sk-head { color: #E91E8C; }
+    .sk-item {
+      display: flex; align-items: center; gap: 7px;
+      font-size: 12px; padding: 5px 0;
+      border-bottom: 1px dashed #ddd;
+      font-weight: 500; color: #333;
+    }
+    .sk-item:last-child { border-bottom: none; }
+    .sd { width: 7px; height: 7px; border-radius: 50%; background: var(--ink); flex-shrink: 0; }
+
+    /* ─── JOURNEY ─── */
+    .journey-card {
+      background: var(--card);
+      border: var(--border);
+      border-radius: 12px;
+      box-shadow: var(--shadow-lg);
+      margin-bottom: 28px;
+      overflow: hidden;
+    }
+    .journey-header {
+      padding: 14px 24px;
+      font-size: 18px; font-weight: 800;
+      border-bottom: var(--border);
+      text-align: center; letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .journey-body {
+      padding: 70px 24px;
+      text-align: center;
+      font-family: 'Caveat', cursive;
+      font-size: 32px; font-weight: 700;
+      color: #ccc;
+    }
+
+    /* ─── EXPERIMENTS ─── */
+    .exp-header {
+      text-align: center;
+      font-size: 16px; font-weight: 800;
+      letter-spacing: 2.5px; text-transform: uppercase;
+      margin-bottom: 20px;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+    }
+    .exp-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+    .exp-card {
+      border: var(--border);
+      border-radius: 10px;
+      padding: 44px 10px;
+      text-align: center;
+      font-size: 40px; font-weight: 800;
+      box-shadow: var(--shadow);
+      position: relative;
+      cursor: pointer;
+      transition: transform .15s, box-shadow .15s;
+    }
+    .exp-card:hover { transform: translate(-2px,-3px); box-shadow: 6px 7px 0 var(--ink); }
+    .exp-card:active { transform: translate(2px,2px); box-shadow: 2px 2px 0 var(--ink); }
+    .exp-card::before {
+      content: '';
+      position: absolute;
+      top: -9px; right: 16px;
+      width: 18px; height: 18px;
+      border-radius: 50%;
+      background: var(--yellow);
+      border: 2px solid var(--ink);
+    }
+    .e1,.e4,.e7 { background: var(--cyan); }
+    .e2,.e5,.e8 { background: var(--yellow); }
+    .e3,.e6,.e9 { background: var(--pink); }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--card);
+      border: var(--border);
+      border-radius: 12px;
+      padding: 18px 28px;
+      box-shadow: var(--shadow);
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 12px;
+    }
+    .f-name { font-weight: 800; font-size: 14px; margin-bottom: 2px; }
+    .f-copy { color: #999; font-size: 11px; }
+    .f-nav { display: flex; gap: 18px; }
+    .f-nav a { text-decoration: none; color: #444; font-size: 12px; font-weight: 500; transition: color .15s; }
+    .f-nav a:hover { color: var(--ink); }
+    .f-icons { display: flex; gap: 8px; }
+    .fi {
+      width: 28px; height: 28px;
+      border: 2px solid var(--ink);
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 12px; font-weight: 700;
+      background: var(--card);
+      cursor: pointer;
+      text-decoration: none; color: var(--ink);
+      transition: transform .1s, box-shadow .1s;
+      box-shadow: 2px 2px 0 var(--ink);
+    }
+    .fi:hover { transform: translate(-1px,-1px); box-shadow: 3px 3px 0 var(--ink); }
+
+    /* ─── SCROLL REVEAL ─── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .5s ease, transform .5s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 640px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-right { padding: 20px 10px 30px; }
+      .two-col { grid-template-columns: 1fr; }
+      .sk-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .exp-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav>
+    <div class="nav-logo">MB</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#" class="active">Work</a>
+      <a href="#skills">Skills</a>
+    </div>
+    <div class="nav-right">
+      <a class="btn-nav" href="#contact">Get in Touch</a>
+      <div class="icon-btn" title="Toggle theme">🌙</div>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <div class="hero">
+    <div class="hero-left">
+      <div class="hero-greeting">Hi there! 👋</div>
+      <div class="hero-name">I'm Deepak Baviskar</div>
+      <div class="hero-desc">
+        Based in Munich, Germany; I'm a Senior Software Engineer. I love to work with distributed systems, data pipelines, and cloud technologies. I'm passionate about microservices, full-stack development, and building cool stuff.
+      </div>
+      <div class="hero-socials">
+        <a class="s-btn" href="#" title="YouTube">▶</a>
+        <a class="s-btn" href="#" title="GitHub">&#x1F4BE;</a>
+        <a class="s-btn" href="#" title="LinkedIn" style="font-size:11px">in</a>
+      </div>
+      <div class="hero-actions">
+        <a class="btn-main" href="#contact">Get in Touch</a>
+        <a class="coffee-link" href="#">Buy me a coffee ☕</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="av-wrap">
+        <div class="stk stk-code">&lt;/&gt;</div>
+        <div class="av-card">
+          <div class="av-face">🧑‍💻</div>
+          <div class="ninja-badge">🥷 Full-Stack Ninja</div>
+        </div>
+        <div class="stk stk-disk">💾</div>
+        <div class="stk stk-term">&gt;_</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ TECH PILLS ═══ -->
+  <div class="pills">
+    <div class="pill">⬡ Node.js</div>
+    <div class="pill y">⚛ React</div>
+    <div class="pill">🐍 Python</div>
+    <div class="pill d">JS JavaScript</div>
+    <div class="pill">&lt;/&gt; HTML</div>
+    <div class="pill">TS TypeScript</div>
+    <div class="pill">☁ Google Cloud</div>
+    <div class="pill">🐳 Docker</div>
+  </div>
+
+  <!-- ═══ WAVY DIVIDER ═══ -->
+  <div class="wavy">
+    <svg viewBox="0 0 860 22" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,11 C40,0 80,22 120,11 C160,0 200,22 240,11 C280,0 320,22 360,11 C400,0 440,22 480,11 C520,0 560,22 600,11 C640,0 680,22 720,11 C760,0 800,22 840,11 L860,11" fill="none" stroke="#ccc" stroke-width="2"/>
+    </svg>
+  </div>
+
+  <!-- ═══ ABOUT ═══ -->
+  <div id="about">
+    <div class="sec-label reveal">ABOUT</div>
+    <div class="about-card reveal">
+      <p>
+        Highly experienced and dynamic software engineer with a rich professional background spanning over
+        <span class="hy">11 years</span>. Throughout my career, I've held positions in renowned tech companies across
+        <span class="hb">Albania, France, USA, and Germany</span>. My contributions have been pivotal in designing and constructing
+        <span class="hb">microservices for distributed systems</span>, implementing
+        <span class="hb">data pipelines on Google Cloud</span>, and engaging in
+        <span class="hg">full-stack development</span>.
+      </p>
+      <p>
+        My passion for <strong>continuous learning and innovation</strong> is evident through my active presence on various platforms. I thrive on staying updated with the <strong>latest trends and technologies</strong> in the ever-evolving tech landscape.
+      </p>
+      <p>
+        I bring a unique blend of <strong>technical expertise</strong>, <strong>leadership qualities</strong>, and a genuine enthusiasm for creating <strong>impactful software solutions</strong>.
+      </p>
+    </div>
+  </div>
+
+  <!-- ═══ EDUCATION + LANGUAGES ═══ -->
+  <div class="two-col reveal">
+    <div>
+      <div class="sec-label">EDUCATION</div>
+      <div class="edu-card">
+        <h3>Bachelor's Degree in<br>Computer Science</h3>
+        <div class="edu-sub">The university · 3 years</div>
+        <div class="edu-badges">
+          <div class="edu-badge">2012</div>
+          <div class="edu-badge">2015</div>
+        </div>
+        <div class="edu-place">📍 Some University</div>
+      </div>
+    </div>
+    <div>
+      <div class="sec-label">LANGUAGES</div>
+      <div class="lang-card">
+        <div class="lang-row">Albanian<div class="dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div></div></div>
+        <div class="lang-row">English<div class="dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div></div></div>
+        <div class="lang-row">German<div class="dots"><div class="dot on"></div><div class="dot on"></div><div class="dot"></div></div></div>
+        <div class="lang-row">Italian<div class="dots"><div class="dot on"></div><div class="dot"></div><div class="dot"></div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SKILLS ═══ -->
+  <div id="skills">
+    <div class="sec-label reveal">SKILLS</div>
+    <div class="skills-card reveal">
+      <div class="sk-grid">
+        <div class="sk-col fe">
+          <div class="sk-head">🎨 FRONTEND</div>
+          <div class="sk-item"><div class="sd"></div>React.js</div>
+          <div class="sk-item"><div class="sd"></div>Redux</div>
+          <div class="sk-item"><div class="sd"></div>Next.js</div>
+          <div class="sk-item"><div class="sd"></div>Ant Design</div>
+          <div class="sk-item"><div class="sd"></div>Bootstrap</div>
+          <div class="sk-item"><div class="sd"></div>Material UI</div>
+          <div class="sk-item"><div class="sd"></div>React Native</div>
+          <div class="sk-item"><div class="sd"></div>Storybook</div>
+        </div>
+        <div class="sk-col la">
+          <div class="sk-head">&lt;/&gt; LANGUAGES</div>
+          <div class="sk-item"><div class="sd"></div>JavaScript</div>
+          <div class="sk-item"><div class="sd"></div>TypeScript</div>
+          <div class="sk-item"><div class="sd"></div>Python</div>
+          <div class="sk-item"><div class="sd"></div>Java</div>
+          <div class="sk-item"><div class="sd"></div>Node.js</div>
+          <div class="sk-item"><div class="sd"></div>Go</div>
+          <div class="sk-item"><div class="sd"></div>HTML5</div>
+          <div class="sk-item"><div class="sd"></div>CSS3</div>
+        </div>
+        <div class="sk-col be">
+          <div class="sk-head">⚙️ BACKEND</div>
+          <div class="sk-item"><div class="sd"></div>Node.js</div>
+          <div class="sk-item"><div class="sd"></div>Express.js</div>
+          <div class="sk-item"><div class="sd"></div>NestJS</div>
+          <div class="sk-item"><div class="sd"></div>GraphQL</div>
+          <div class="sk-item"><div class="sd"></div>Google Cloud</div>
+          <div class="sk-item"><div class="sd"></div>Docker</div>
+          <div class="sk-item"><div class="sd"></div>AWS</div>
+          <div class="sk-item"><div class="sd"></div>MySQL</div>
+          <div class="sk-item"><div class="sd"></div>Redis</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ MY JOURNEY ═══ -->
+  <div class="journey-card reveal">
+    <div class="journey-header">My Journey</div>
+    <div class="journey-body">Coming Soon....</div>
+  </div>
+
+  <!-- ═══ EXPERIMENTS ═══ -->
+  <div class="exp-header reveal">🧪 EXPERIMENTS</div>
+  <div class="exp-grid reveal">
+    <div class="exp-card e1">1</div>
+    <div class="exp-card e2">2</div>
+    <div class="exp-card e3">3</div>
+    <div class="exp-card e4">4</div>
+    <div class="exp-card e5">5</div>
+    <div class="exp-card e6">6</div>
+    <div class="exp-card e7">7</div>
+    <div class="exp-card e8">8</div>
+    <div class="exp-card e9">9</div>
+  </div>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer id="contact" class="reveal">
+    <div>
+      <div class="f-name">Deepak Baviskar</div>
+      <div class="f-copy">© 2026 Deepak Baviskar. All rights reserved.</div>
+    </div>
+    <div class="f-nav">
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#">Experiments</a>
+      <a href="#skills">Skills</a>
+    </div>
+    <div class="f-icons">
+      <a class="fi" href="#" title="YouTube">▶</a>
+      <a class="fi" href="#" title="GitHub">🐙</a>
+      <a class="fi" href="#" title="LinkedIn" style="font-size:10px">in</a>
+    </div>
+  </footer>
+
+</div><!-- /wrapper -->
+
+<script>
+  /* Scroll reveal */
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+  /* Dark mode toggle */
+  const toggleBtn = document.querySelector('.icon-btn');
+  toggleBtn.addEventListener('click', () => {
+    document.documentElement.style.setProperty('--bg',   document.documentElement.style.getPropertyValue('--bg') === '#1a1a1a' ? '#f4efe6' : '#1a1a1a');
+    document.documentElement.style.setProperty('--card', document.documentElement.style.getPropertyValue('--card') === '#2a2a2a' ? '#ffffff' : '#2a2a2a');
+    document.documentElement.style.setProperty('--ink',  document.documentElement.style.getPropertyValue('--ink') === '#f4efe6' ? '#1a1a1a' : '#f4efe6');
+    toggleBtn.textContent = toggleBtn.textContent === '🌙' ? '☀️' : '🌙';
+  });
+</script>
+</body>
+</html>
