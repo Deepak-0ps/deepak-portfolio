@@ -1,0 +1,73 @@
+<svg width="860" height="380" viewBox="0 0 860 380" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <rect width="860" height="380" fill="#f4efe6"/>
+
+  <!-- LEFT SIDE -->
+  <!-- Greeting -->
+  <text x="0" y="36" font-size="22" fill="#1a1a1a">Hi there! 👋</text>
+  <!-- Name -->
+  <text x="0" y="84" font-size="40" font-weight="800" fill="#1a1a1a">I'm Deepak Baviskar</text>
+  <!-- Desc -->
+  <text x="0" y="116" font-size="13.5" fill="#444444">Based in Munich, Germany; I'm a Senior Software Engineer. I love to</text>
+  <text x="0" y="134" font-size="13.5" fill="#444444">work with distributed systems, data pipelines, and cloud</text>
+  <text x="0" y="152" font-size="13.5" fill="#444444">technologies. I'm passionate about microservices, full-stack</text>
+  <text x="0" y="170" font-size="13.5" fill="#444444">development, and building cool stuff.</text>
+
+  <!-- Social icons row -->
+  <!-- YouTube -->
+  <rect x="3" y="191" width="36" height="36" rx="8" fill="#1a1a1a" opacity="0.15"/>
+  <rect x="0" y="188" width="36" height="36" rx="8" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="18" y="212" text-anchor="middle" font-size="14">▶</text>
+  <!-- GitHub -->
+  <rect x="49" y="191" width="36" height="36" rx="8" fill="#1a1a1a" opacity="0.15"/>
+  <rect x="46" y="188" width="36" height="36" rx="8" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="64" y="212" text-anchor="middle" font-size="15">💾</text>
+  <!-- LinkedIn -->
+  <rect x="95" y="191" width="36" height="36" rx="8" fill="#1a1a1a" opacity="0.15"/>
+  <rect x="92" y="188" width="36" height="36" rx="8" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="110" y="212" text-anchor="middle" font-size="12" font-weight="800" fill="#1a1a1a">in</text>
+
+  <!-- Get in Touch button -->
+  <rect x="3" y="243" width="120" height="38" rx="8" fill="#1a1a1a" opacity="0.15"/>
+  <rect x="0" y="240" width="120" height="38" rx="8" fill="#FFD93D" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="60" y="264" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1a1a1a">Get in Touch</text>
+
+  <!-- Buy me a coffee -->
+  <text x="134" y="263" font-size="18" fill="#1a1a1a" font-family="Georgia,serif" font-style="italic">Buy me a coffee ☕</text>
+
+  <!-- RIGHT SIDE — Avatar Card -->
+  <!-- card shadow -->
+  <rect x="556" y="36" width="220" height="280" rx="14" fill="#1a1a1a" opacity="0.18"/>
+  <!-- card bg -->
+  <rect x="550" y="30" width="220" height="280" rx="14" fill="#ffffff" stroke="#1a1a1a" stroke-width="3"/>
+  <!-- avatar face gradient bg -->
+  <defs>
+    <linearGradient id="avGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFD93D"/>
+      <stop offset="60%" stop-color="#FFB347"/>
+      <stop offset="100%" stop-color="#FF8C42"/>
+    </linearGradient>
+  </defs>
+  <rect x="558" y="38" width="204" height="264" rx="9" fill="url(#avGrad)"/>
+  <!-- Big emoji avatar -->
+  <text x="660" y="200" text-anchor="middle" font-size="100">🧑‍💻</text>
+
+  <!-- Full-Stack Ninja badge -->
+  <rect x="656" y="299" width="138" height="24" rx="12" fill="#1a1a1a" opacity="0.2"/>
+  <rect x="652" y="295" width="138" height="24" rx="12" fill="#1a1a1a"/>
+  <text x="721" y="312" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.5">🥷 Full-Stack Ninja</text>
+
+  <!-- Sticker: code top-left -->
+  <rect x="537" y="18" width="44" height="44" rx="9" fill="#1a1a1a" opacity="0.15"/>
+  <rect x="533" y="14" width="44" height="44" rx="9" fill="#ffffff" stroke="#1a1a1a" stroke-width="2.5"/>
+  <text x="555" y="42" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a1a">&lt;/&gt;</text>
+
+  <!-- Sticker: disk bottom-left -->
+  <rect x="524" y="232" width="44" height="44" rx="9" fill="#1a1a1a" opacity="0.15"/>
+  <rect x="520" y="228" width="44" height="44" rx="9" fill="#6C8EFF" stroke="#1a1a1a" stroke-width="2.5"/>
+  <text x="542" y="256" text-anchor="middle" font-size="20">💾</text>
+
+  <!-- Sticker: terminal top-right -->
+  <rect x="779" y="58" width="46" height="44" rx="9" fill="#1a1a1a" opacity="0.15"/>
+  <rect x="775" y="54" width="46" height="44" rx="9" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2.5"/>
+  <text x="798" y="81" text-anchor="middle" font-size="12" font-weight="700" fill="#FFD93D">&gt;_</text>
+</svg>

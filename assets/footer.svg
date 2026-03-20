@@ -1,0 +1,22 @@
+<svg width="860" height="70" viewBox="0 0 860 70" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <rect width="860" height="70" fill="#f4efe6"/>
+  <!-- card shadow -->
+  <rect x="4" y="4" width="856" height="66" rx="10" fill="#1a1a1a" opacity="0.12"/>
+  <!-- card -->
+  <rect x="0" y="0" width="856" height="66" rx="10" fill="#ffffff" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- Left: name + copyright -->
+  <text x="20" y="25" font-size="14" font-weight="800" fill="#1a1a1a">Deepak Baviskar</text>
+  <text x="20" y="48" font-size="11" fill="#999999">© 2026 Deepak Baviskar. All rights reserved.</text>
+  <!-- Center: nav links -->
+  <text x="340" y="38" font-size="12" font-weight="500" fill="#444444">Home</text>
+  <text x="400" y="38" font-size="12" font-weight="500" fill="#444444">About</text>
+  <text x="460" y="38" font-size="12" font-weight="500" fill="#444444">Experiments</text>
+  <text x="560" y="38" font-size="12" font-weight="500" fill="#444444">Skills</text>
+  <!-- Right: icon buttons -->
+  <rect x="764" y="16" width="28" height="28" rx="6" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="778" y="34" text-anchor="middle" font-size="12">▶</text>
+  <rect x="800" y="16" width="28" height="28" rx="6" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="814" y="34" text-anchor="middle" font-size="13">🐙</text>
+  <rect x="836" y="16" width="28" height="28" rx="6" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="850" y="34" text-anchor="middle" font-size="10" font-weight="800" fill="#1a1a1a">in</text>
+</svg>

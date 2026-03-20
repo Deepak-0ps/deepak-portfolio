@@ -1,0 +1,63 @@
+<svg width="860" height="230" viewBox="0 0 860 230" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <rect width="860" height="230" fill="#f4efe6"/>
+
+  <!-- ── EDUCATION (left) ── -->
+  <!-- Label -->
+  <rect x="4" y="4" width="112" height="32" rx="8" fill="#1a1a1a" opacity="0.15"/>
+  <rect x="0" y="0" width="112" height="32" rx="8" fill="#FFD93D" stroke="#1a1a1a" stroke-width="2.5"/>
+  <text x="56" y="21" text-anchor="middle" font-size="13" font-weight="800" fill="#1a1a1a" letter-spacing="1.5">EDUCATION</text>
+  <!-- Card shadow -->
+  <rect x="4" y="48" width="414" height="178" rx="12" fill="#1a1a1a" opacity="0.12"/>
+  <!-- Card -->
+  <rect x="0" y="44" width="414" height="178" rx="12" fill="#ffffff" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- Content -->
+  <text x="20" y="80" font-size="17" font-weight="800" fill="#1a1a1a">Bachelor's Degree in</text>
+  <text x="20" y="102" font-size="17" font-weight="800" fill="#1a1a1a">Computer Science</text>
+  <text x="20" y="124" font-size="12" fill="#888888">The university · 3 years</text>
+  <!-- Year badges -->
+  <rect x="22" y="137" width="52" height="24" rx="5" fill="#1a1a1a" opacity="0.12"/>
+  <rect x="20" y="134" width="52" height="24" rx="5" fill="#FFD93D" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="46" y="151" text-anchor="middle" font-size="11" font-weight="800" fill="#1a1a1a">2012</text>
+  <rect x="84" y="137" width="52" height="24" rx="5" fill="#1a1a1a" opacity="0.12"/>
+  <rect x="82" y="134" width="52" height="24" rx="5" fill="#FFD93D" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="108" y="151" text-anchor="middle" font-size="11" font-weight="800" fill="#1a1a1a">2015</text>
+  <!-- Place -->
+  <text x="20" y="195" font-size="11.5" fill="#aaaaaa">📍 Some University</text>
+
+  <!-- ── LANGUAGES (right) ── -->
+  <!-- Label -->
+  <rect x="450" y="4" width="112" height="32" rx="8" fill="#1a1a1a" opacity="0.15"/>
+  <rect x="446" y="0" width="112" height="32" rx="8" fill="#FFD93D" stroke="#1a1a1a" stroke-width="2.5"/>
+  <text x="502" y="21" text-anchor="middle" font-size="13" font-weight="800" fill="#1a1a1a" letter-spacing="1.5">LANGUAGES</text>
+  <!-- Card shadow -->
+  <rect x="450" y="48" width="410" height="178" rx="12" fill="#1a1a1a" opacity="0.12"/>
+  <!-- Card -->
+  <rect x="446" y="44" width="410" height="178" rx="12" fill="#ffffff" stroke="#1a1a1a" stroke-width="2.5"/>
+
+  <!-- Albanian row -->
+  <text x="466" y="82" font-size="13.5" font-weight="500" fill="#1a1a1a">Albanian</text>
+  <circle cx="760" cy="75" r="7" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="784" cy="75" r="7" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="808" cy="75" r="7" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="466" y1="94" x2="846" y2="94" stroke="#e0e0e0" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- English row -->
+  <text x="466" y="118" font-size="13.5" font-weight="500" fill="#1a1a1a">English</text>
+  <circle cx="760" cy="111" r="7" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="784" cy="111" r="7" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="808" cy="111" r="7" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="466" y1="130" x2="846" y2="130" stroke="#e0e0e0" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- German row -->
+  <text x="466" y="154" font-size="13.5" font-weight="500" fill="#1a1a1a">German</text>
+  <circle cx="760" cy="147" r="7" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="784" cy="147" r="7" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="808" cy="147" r="7" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="466" y1="166" x2="846" y2="166" stroke="#e0e0e0" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Italian row -->
+  <text x="466" y="190" font-size="13.5" font-weight="500" fill="#1a1a1a">Italian</text>
+  <circle cx="760" cy="183" r="7" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="784" cy="183" r="7" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="808" cy="183" r="7" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+</svg>
