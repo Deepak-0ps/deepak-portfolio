@@ -1,0 +1,7 @@
+<svg width="860" height="170" viewBox="0 0 860 170" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <rect x="4" y="4" width="854" height="164" rx="12" fill="#1a1a1a" opacity="0.12"/>
+  <rect x="0" y="0" width="854" height="164" rx="12" fill="#ffffff" stroke="#1a1a1a" stroke-width="2.5"/>
+  <line x1="0" y1="46" x2="854" y2="46" stroke="#1a1a1a" stroke-width="2.5"/>
+  <text x="427" y="23" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="800" fill="#1a1a1a" letter-spacing="2">MY JOURNEY</text>
+  <text x="427" y="110" text-anchor="middle" dominant-baseline="middle" font-size="30" font-weight="700" fill="#cccccc" font-family="Georgia,serif" font-style="italic">Coming Soon....</text>
+</svg>

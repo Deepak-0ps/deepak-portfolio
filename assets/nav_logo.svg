@@ -1,0 +1,7 @@
+<svg width="46" height="36" viewBox="0 0 46 36" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <a href="#">
+    <rect x="2" y="2" width="42" height="32" rx="7" fill="#1a1a1a" opacity="0.2"/>
+    <rect x="0" y="0" width="42" height="32" rx="7" fill="#1a1a1a"/>
+    <text x="21" y="21" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="800" fill="#ffffff" letter-spacing="1.5">MB</text>
+  </a>
+</svg>

@@ -1,0 +1,8 @@
+<svg width="420" height="90" viewBox="0 0 420 90" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <text font-size="13.5" fill="#444444">
+    <tspan x="0" y="12">Based in Munich, Germany; I'm a Senior Software Engineer.</tspan>
+    <tspan x="0" dy="20">I love to work with distributed systems, data pipelines,</tspan>
+    <tspan x="0" dy="20">and cloud technologies. Passionate about microservices,</tspan>
+    <tspan x="0" dy="20">full-stack development, and building cool stuff.</tspan>
+  </text>
+</svg>

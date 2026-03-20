@@ -1,0 +1,7 @@
+<svg width="136" height="44" viewBox="0 0 136 44" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <a href="#">
+    <rect x="4" y="4" width="130" height="38" rx="9" fill="#1a1a1a" opacity="0.18"/>
+    <rect x="0" y="0" width="130" height="38" rx="9" fill="#FFD93D" stroke="#1a1a1a" stroke-width="2.5"/>
+    <text x="65" y="19" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#1a1a1a">Get in Touch</text>
+  </a>
+</svg>

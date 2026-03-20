@@ -1,0 +1,29 @@
+<svg width="276" height="348" viewBox="0 0 276 348" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <rect x="3" y="3" width="272" height="345" rx="10" fill="#1a1a1a" opacity="0.12"/>
+  <rect x="0" y="0" width="272" height="345" rx="10" fill="#f9f5ed" stroke="#FF6B35" stroke-width="2"/>
+  <text x="20" y="38" font-size="12" font-weight="800" fill="#FF6B35" letter-spacing="0.8">🎨 FRONTEND</text>
+  <line x1="0" y1="52" x2="272" y2="52" stroke="#FF6B35" stroke-width="2"/>
+  <circle cx="26" cy="112" r="4" fill="#1a1a1a"/>
+  <text x="40" y="117" font-size="12.5" font-weight="500" fill="#333">React.js</text>
+  <line x1="12" y1="130" x2="262" y2="130" stroke="#e8e0d0" stroke-width="1" stroke-dasharray="3,3"/>
+  <circle cx="26" cy="147" r="4" fill="#1a1a1a"/>
+  <text x="40" y="152" font-size="12.5" font-weight="500" fill="#333">Redux</text>
+  <line x1="12" y1="165" x2="262" y2="165" stroke="#e8e0d0" stroke-width="1" stroke-dasharray="3,3"/>
+  <circle cx="26" cy="182" r="4" fill="#1a1a1a"/>
+  <text x="40" y="187" font-size="12.5" font-weight="500" fill="#333">Next.js</text>
+  <line x1="12" y1="200" x2="262" y2="200" stroke="#e8e0d0" stroke-width="1" stroke-dasharray="3,3"/>
+  <circle cx="26" cy="217" r="4" fill="#1a1a1a"/>
+  <text x="40" y="222" font-size="12.5" font-weight="500" fill="#333">Ant Design</text>
+  <line x1="12" y1="235" x2="262" y2="235" stroke="#e8e0d0" stroke-width="1" stroke-dasharray="3,3"/>
+  <circle cx="26" cy="252" r="4" fill="#1a1a1a"/>
+  <text x="40" y="257" font-size="12.5" font-weight="500" fill="#333">Bootstrap</text>
+  <line x1="12" y1="270" x2="262" y2="270" stroke="#e8e0d0" stroke-width="1" stroke-dasharray="3,3"/>
+  <circle cx="26" cy="287" r="4" fill="#1a1a1a"/>
+  <text x="40" y="292" font-size="12.5" font-weight="500" fill="#333">Material UI</text>
+  <line x1="12" y1="305" x2="262" y2="305" stroke="#e8e0d0" stroke-width="1" stroke-dasharray="3,3"/>
+  <circle cx="26" cy="322" r="4" fill="#1a1a1a"/>
+  <text x="40" y="327" font-size="12.5" font-weight="500" fill="#333">React Native</text>
+  <line x1="12" y1="340" x2="262" y2="340" stroke="#e8e0d0" stroke-width="1" stroke-dasharray="3,3"/>
+  <circle cx="26" cy="357" r="4" fill="#1a1a1a"/>
+  <text x="40" y="362" font-size="12.5" font-weight="500" fill="#333">Storybook</text>
+</svg>

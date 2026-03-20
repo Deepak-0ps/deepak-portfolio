@@ -1,0 +1,6 @@
+<svg width="60" height="36" viewBox="0 0 60 36" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <a href="#">
+    <rect width="60" height="36" fill="transparent"/>
+    <text x="30" y="18" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="500" fill="#1a1a1a" >Skills</text>
+  </a>
+</svg>

@@ -1,0 +1,25 @@
+<svg width="860" height="196" viewBox="0 0 860 196" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <rect x="4" y="4" width="854" height="190" rx="12" fill="#1a1a1a" opacity="0.12"/>
+  <rect x="0" y="0" width="854" height="190" rx="12" fill="#ffffff" stroke="#1a1a1a" stroke-width="2.5"/>
+  <text x="22" y="34" font-size="13.5" fill="#333">Highly experienced and dynamic software engineer with a rich professional background spanning over</text>
+  <rect x="618" y="20" width="62" height="22" rx="3" fill="#FFD93D"/>
+  <text x="649" y="34" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1a1a1a">11 years</text>
+  <text x="685" y="34" font-size="13.5" fill="#333">. Throughout my career,</text>
+  <text x="22" y="58" font-size="13.5" fill="#333">I&#39;ve held positions in renowned tech companies across</text>
+  <rect x="332" y="44" width="212" height="22" rx="3" fill="#6C8EFF"/>
+  <text x="438" y="58" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">Albania, France, USA, and Germany</text>
+  <text x="549" y="58" font-size="13.5" fill="#333">. My contributions have been</text>
+  <text x="22" y="82" font-size="13.5" fill="#333">pivotal in designing and constructing</text>
+  <rect x="248" y="68" width="218" height="22" rx="3" fill="#6C8EFF"/>
+  <text x="357" y="82" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">microservices for distributed systems</text>
+  <text x="472" y="82" font-size="13.5" fill="#333">, implementing</text>
+  <rect x="22" y="92" width="196" height="22" rx="3" fill="#6C8EFF"/>
+  <text x="120" y="106" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">data pipelines on Google Cloud</text>
+  <text x="224" y="106" font-size="13.5" fill="#333">, and engaging in</text>
+  <rect x="374" y="92" width="178" height="22" rx="3" fill="#6BCB77"/>
+  <text x="463" y="106" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a1a">full-stack development</text>
+  <text x="557" y="106" font-size="13.5" fill="#333">.</text>
+  <text x="22" y="134" font-size="13.5" fill="#333">My passion for <tspan font-weight="700">continuous learning and innovation</tspan> is evident through my active presence on various platforms. I thrive on staying</text>
+  <text x="22" y="155" font-size="13.5" fill="#333">updated with the <tspan font-weight="700">latest trends and technologies</tspan> in the ever-evolving tech landscape.</text>
+  <text x="22" y="180" font-size="13.5" fill="#333">I bring a unique blend of <tspan font-weight="700">technical expertise</tspan>, <tspan font-weight="700">leadership qualities</tspan>, and genuine enthusiasm for creating <tspan font-weight="700">impactful software solutions</tspan>.</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg width="420" height="180" viewBox="0 0 420 180" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <rect x="4" y="4" width="414" height="174" rx="12" fill="#1a1a1a" opacity="0.12"/>
+  <rect x="0" y="0" width="414" height="174" rx="12" fill="#ffffff" stroke="#1a1a1a" stroke-width="2.5"/>
+  <text x="20" y="38" font-size="13.5" font-weight="500" fill="#1a1a1a">Albanian</text>
+  <circle cx="342" cy="32" r="8" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="366" cy="32" r="8" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="390" cy="32" r="8" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="16" y1="52" x2="404" y2="52" stroke="#e0e0e0" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="20" y="76" font-size="13.5" font-weight="500" fill="#1a1a1a">English</text>
+  <circle cx="342" cy="70" r="8" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="366" cy="70" r="8" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="390" cy="70" r="8" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="16" y1="90" x2="404" y2="90" stroke="#e0e0e0" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="20" y="114" font-size="13.5" font-weight="500" fill="#1a1a1a">German</text>
+  <circle cx="342" cy="108" r="8" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="366" cy="108" r="8" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="390" cy="108" r="8" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="16" y1="128" x2="404" y2="128" stroke="#e0e0e0" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="20" y="152" font-size="13.5" font-weight="500" fill="#1a1a1a">Italian</text>
+  <circle cx="342" cy="146" r="8" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="366" cy="146" r="8" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="390" cy="146" r="8" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+</svg>
