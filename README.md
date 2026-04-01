@@ -1,7 +1,7 @@
 <!-- ══════════════════════  NAVBAR  ══════════════════════ -->
 <div align="center">
 
-[![logo](assets/nav_logo.svg)](#)&nbsp;&nbsp;[![home](assets/nav_home.svg)](#)&nbsp;[![about](assets/nav_about.svg)](#about)&nbsp;[![work](assets/nav_work.svg)](#)&nbsp;[![skills](assets/nav_skills.svg)](#skills)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![cta](assets/nav_cta.svg)](#contact)&nbsp;[![moon](assets/nav_moon.svg)](#)
+[![logo](assets/nav_logo.svg)](#)&nbsp;&nbsp;[![home](assets/nav_home.svg)](#)&nbsp;[![about](assets/nav_about.svg)](#about)&nbsp;[![work](assets/nav_work.svg)](#)&nbsp;[![skills](assets/nav_skills.svg)](#skills)&nbsp;[![cta](assets/nav_cta.svg)](#contact)
 
 </div>
 
