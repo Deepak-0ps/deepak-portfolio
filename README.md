@@ -12,7 +12,7 @@
 
 Based in Munich, Germany, I’m a Senior Software Engineer. I love to work with distributed systems, data pipelines, and cloud technologies. I’m passionate about microservices, full-stack development, and building cool stuff.
 
-# About Me
+# About 
 
 <table>
 <tr>
@@ -29,3 +29,30 @@ I bring a unique blend of **technical expertise**, **leadership qualities**, and
 </td>
 </tr>
 </table>
+
+
+# Skills 
+
+<p align="right">
+  <img src="https://img.shields.io/badge/FRONTEND-black?style=for-the-badge" />
+</p>
+
+<p align="right">
+  <img src="https://img.shields.io/badge/LANGUAGES-black?style=for-the-badge" />
+</p>
+
+<p align="right">
+  <img src="https://img.shields.io/badge/BACKEND-black?style=for-the-badge" />
+</p>
+
+<p align="right">
+  <img src="https://img.shields.io/badge/CLOUD%20%26%20DEVOPS-black?style=for-the-badge" />
+</p>
+
+<p align="right">
+  <img src="https://img.shields.io/badge/DATABASES-black?style=for-the-badge" />
+</p>
+
+<p align="right">
+  <img src="https://img.shields.io/badge/TOOLS%20%26%20MORE-black?style=for-the-badge" />
+</p>
