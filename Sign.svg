@@ -1,0 +1,38 @@
+<svg width="3400" height="1380" viewBox="0 0 3400 1380" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .sig {
+      font-family: "Brush Script MT", "Segoe Script", "Pacifico", cursive;
+      font-size: 260px;
+      fill: none;
+      stroke: #083D77;
+      stroke-width: 8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 3000;
+      stroke-dashoffset: 3000;
+      animation: draw 4s ease forwards;
+    }
+
+    .underline {
+      stroke: #38D1C4;
+      stroke-width: 14;
+      stroke-linecap: round;
+      stroke-dasharray: 900;
+      stroke-dashoffset: 900;
+      animation: draw 1s ease forwards;
+      animation-delay: 3.2s;
+    }
+
+    @keyframes draw {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  </style>
+
+  <!-- Signature text -->
+  <text x="350" y="760" class="sig">Deepak Baviskar</text>
+
+  <!-- Underline -->
+  <path class="underline" d="M820 860 C1050 900, 1450 900, 1900 860" />
+</svg>
