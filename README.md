@@ -13,6 +13,8 @@
 Based in Munich, Germany, I’m a Senior Software Engineer. I love to work with distributed systems, data pipelines, and cloud technologies. I’m passionate about microservices, full-stack development, and building cool stuff.
 
 # About 
+<hr>
+
 
 <table>
 <tr>
@@ -61,3 +63,24 @@ I bring a unique blend of **technical expertise**, **leadership qualities**, and
 # Work
 
 # Get In Touch
+
+<p>
+  
+</p>
+
+
+<p>
+  <strong>MARJO BALLABANI</strong><br>
+  <span>Senior Software Engineer</span>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+  <a href="#home">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#about">About</a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#work">Work</a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#skills">Skills</a>
+</p>
+
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=303234&height=2&section=header&text=" width="100%"/>
+</p>
+
+<code>© 2025 Deepak Baviskar</code>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ<img alt="Static Badge" src="https://img.shields.io/badge/RESUME-67D6E8?style=for-the-badge&logo=googledocs&logoColor=black">
